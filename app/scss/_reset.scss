@@ -28,8 +28,13 @@ figure,
 figcaption,
 blockquote,
 dl,
-dd {
+dd,
+button {
   margin: 0;
+}
+
+button {
+  padding: 0;
 }
 
 ul[class] {
