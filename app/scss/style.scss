@@ -1,14 +1,13 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
 .header {
-  max-width: 1810px;
-  width: 100%;
-  padding: 45px 20px;
-  margin: 0 auto;
+  @include big-container;
+  padding: 45px 15px;
 
   &__inner {
     display: flex;
@@ -23,11 +22,10 @@
   }
 
   &__list-link {
-    @extend %dmsans-700;
+    @extend %rubik-500;
     font-size: 15px;
-    font-weight: 700;
     line-height: 12px;
-    color: $link;
+    color: #466372;
   }
 
   &__list-item + .menu__list-item {
@@ -71,8 +69,8 @@
     @extend %dmsans-400;
     font-size: 10px;
     line-height: 27px;
-    font-weight: 400;
-    color: $title;
+    text-align: center;
+    color: #243f4d;
   }
   
   &__num {
@@ -117,7 +115,6 @@
 
   &__item-title {
     @extend %dmsans-700;
-    font-weight: 700;
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
@@ -183,7 +180,7 @@
     line-height: 21px;
     font-weight: 400;
     color: #fff;
-    background-color: #a3bbc8;
+    background-color: $link;
     border: none;
     cursor: pointer;
   }
@@ -222,5 +219,146 @@
     width: 0;
   }
 }
+
+.top-slider {
+  background-color: $accent;
+  @include big-container;
+
+  &__item {
+    overflow: hidden;
+  }
+
+  &__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 15px 85px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 470px;
+    margin-right: 60px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    color: $title-accent;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    max-width: 370px;
+    @extend %rubik-400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #436372;
+  }
+  
+  &__btn {
+    padding: 25px 15px 25px 30px;
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+    color: #fff;
+    border: none;
+    background-color: $link;
+    cursor: pointer;
+    transition: background-color .3s;
+    svg {
+      margin-left: 60px;
+      transition: transform .5s;
+    }
+  }
+
+  &__btn:hover {
+    background-color: #436372;
+    svg {
+      transform: translateX(5px);
+    }
+  }
+
+  &__img {
+    margin-right: -115px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-75px);
+    height: 0;
+    li {
+      padding: 0 6px;
+      transition: background-color .3s;
+    }
+    button {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      border: none;
+      border-radius: 50%;
+      background-color: #fde3cc;
+      @extend %rubik-500;
+      color: $title-accent;
+      transition: background-color .3s;
+    }
+    button:hover {
+      background-color: #fff;
+    }
+    .slick-active {
+      button {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+
+.features {
+  @include big-container;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 45px 0;
+    background-color: $bg;
+    border-right: 1px solid #e8e4df;
+  }
+
+  &__item:last-child {
+    border-right: none;
+  }
+
+  &__item-title {
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+  }
+
+  &__item-text {
+    @extend %dmsans-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #585858;
+    span {
+      display: block;
+    }
+  }
+
+  &__item-img {
+    margin-right: 25px;
+    padding-top: 14px;
+  }
+}
+
 
 @import 'media';

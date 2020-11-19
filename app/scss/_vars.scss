@@ -1,9 +1,9 @@
 $accent: #fcd7b6;
 $default: #7b7b7b;
-$link: #436372;
+$link: #a3bbc8;
 $bg: #fef7f0;
-$title: #243f4d;
-$title-accent: #1a1a1a;
+$title: #191919;
+$title-accent: #243f4d;
 
 
 %dmsans-400 {
@@ -34,4 +34,11 @@ $title-accent: #1a1a1a;
 %poppins-700 {
   font-family: 'Poppins-Bold', sans-serif;
   font-weight: 700;
+}
+
+@mixin big-container {
+  max-width: 1800px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
