@@ -1,0 +1,41 @@
+.features {
+  @include big-container;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 45px 0;
+    background-color: $bg;
+    border-right: 1px solid #e8e4df;
+  }
+
+  &__item:last-child {
+    border-right: none;
+  }
+
+  &__item-title {
+    @extend %dmsans-700;
+    font-size: 1.8rem;
+    line-height: 40px;
+    color: #414141;
+  }
+
+  &__item-text {
+    @extend %dmsans-400;
+    font-size: 1.6rem;
+    line-height: 30px;
+    color: #585858;
+    span {
+      display: block;
+    }
+  }
+
+  &__item-img {
+    margin-right: 25px;
+    padding-top: 14px;
+  }
+}
