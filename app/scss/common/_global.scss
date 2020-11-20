@@ -1,14 +1,16 @@
 html,
 body {
+  background-color: #fff;
   height: 100%;
+  font-size: 62.5%;
 }
 
 body {
   display: flex;
   flex-direction: column;
   @extend %rubik-400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  font-style: normal;
   color: $default;
 }
 
@@ -24,7 +26,15 @@ body {
 
 a {
   @extend %rubik-400;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 24px;
   color: $default;
+}
+
+.title {
+  margin-bottom: 35px;
+  @extend %dmsans-700;
+  font-size: 3.6rem;
+  color: $title;
+  text-align: center;
 }
