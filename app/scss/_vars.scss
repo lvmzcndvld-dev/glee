@@ -1,0 +1,44 @@
+$accent: #fcd7b6;
+$default: #7b7b7b;
+$link: #a3bbc8;
+$bg: #fef7f0;
+$title: #191919;
+$title-accent: #243f4d;
+
+
+%dmsans-400 {
+  font-family: 'DMSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%dmsans-500 {
+  font-family: 'DMSans-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%dmsans-700 {
+  font-family: 'DMSans-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%rubik-400 {
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500 {
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%poppins-700 {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+}
+
+@mixin big-container {
+  max-width: 1800px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
