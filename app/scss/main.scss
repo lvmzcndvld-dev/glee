@@ -477,16 +477,18 @@
       margin-right: 0;
     }
 
-    & + & {
-      &::after {
-        content: '';
-        position: absolute;
-        right: -16px;
-        top: 2px;
-        height: 17px;
-        width: 1px;
-        background-color: $default;
-      }
+    &::after {
+      content: '';
+      position: absolute;
+      right: -16px;
+      top: 2px;
+      height: 17px;
+      width: 1px;
+      background-color: $default;
+    }
+
+    &:last-child::after {
+      display: none;
     }
   }
 }

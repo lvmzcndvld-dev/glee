@@ -2,8 +2,8 @@ $(function () {
     $('.top-slider__items').slick({
         dots: true,
         arrows: false,
-        // autoplay: true,
-        // autoplaySpead: 3000
+        autoplay: true,
+        autoplaySpead: 3000
     });
 
     $('.products__item').hover (
