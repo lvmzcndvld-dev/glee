@@ -32,7 +32,7 @@
 
   &__link {
     @extend %rubik-500;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 16px;
     color: #466372;
     transition: color .3s, opacity .3s;
@@ -82,7 +82,7 @@
   &__link {
     position: relative;
     @extend %dmsans-400;
-    font-size: 10px;
+    font-size: 1rem;
     line-height: 27px;
     text-align: center;
     color: #243f4d;
@@ -154,7 +154,7 @@
   &__title {
     margin-bottom: 30px;
     @extend %rubik-500;
-    font-size: 72px;
+    font-size: 7.2rem;
     line-height: 70px;
     color: $title-accent;
     text-transform: uppercase;
@@ -164,7 +164,7 @@
     margin-bottom: 40px;
     max-width: 370px;
     @extend %rubik-400;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 30px;
     color: #436372;
   }
@@ -173,7 +173,7 @@
     display: flex;
     padding: 25px 20px 25px 30px;
     @extend %rubik-500;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 12px;
     color: #fff;
     border: none;
@@ -254,14 +254,14 @@
 
   &__item-title {
     @extend %dmsans-700;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 40px;
     color: #414141;
   }
 
   &__item-text {
     @extend %dmsans-400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 30px;
     color: #585858;
     span {
@@ -288,7 +288,7 @@
     background-color: #fff;
     border: none;
     @extend %dmsans-700;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #8b8b8b;
     transition: color .3s;
     cursor: pointer;
@@ -389,7 +389,7 @@
 
   &__item-title {
     @extend %dmsans-700;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 21px;
     text-transform: uppercase;
     margin: 16px 0 21px;
@@ -438,7 +438,7 @@
     border: none;
     &::placeholder{
       @extend %dmsans-400;
-      font-size: 12px;
+      font-size: 1.2rem;
       font-weight: 400;
       color: #234969;
     }
@@ -449,7 +449,7 @@
     height: 100%;
     width: 40%;
     @extend %dmsans-400;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 21px;
     font-weight: 400;
     color: #fff;
