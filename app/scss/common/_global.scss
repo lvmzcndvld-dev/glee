@@ -24,6 +24,13 @@ body {
   padding: 0 15px;
 }
 
+.big-container {
+  max-width: 1800px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 a {
   @extend %rubik-400;
   font-size: 1.4rem;
@@ -38,3 +45,4 @@ a {
   color: $title;
   text-align: center;
 }
+
