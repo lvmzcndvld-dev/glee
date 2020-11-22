@@ -1,27 +1,12 @@
 .products {
-  padding: 75px 0;
-  
+  padding-bottom: 75px;
+
   &__filter {
-    text-align: center;
-    margin-bottom: 80px;
+    @include filter;
   }
 
   &__filter-btn {
-    background-color: #fff;
-    border: none;
-    @extend %dmsans-700;
-    font-size: 1.6rem;
-    color: #8b8b8b;
-    transition: color .3s;
-    cursor: pointer;
-    &+.products__filter-btn {
-      margin-left: 30px;
-    }
-    &.mixitup-control-active,
-    &:hover {
-      color: $title;
-      outline: transparent;
-    }
+    @include filter-btn;
   }
 
   &__content {

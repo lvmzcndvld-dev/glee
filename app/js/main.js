@@ -12,5 +12,15 @@ $(function () {
         }
     );
 
-    var mixer = mixitup('.products__content');
+    var mixer = mixitup('.products__content', {
+        selectors: {
+            control: '.products__filter-btn'
+        }
+    });
+
+    var mixer = mixitup('.new-design__content', {
+        selectors: {
+            control: '.new-design__filter-btn'
+        }
+    });
 });
