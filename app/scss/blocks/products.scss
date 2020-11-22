@@ -1,27 +1,12 @@
 .products {
-  padding-top: 75px;
-  
+  padding-bottom: 75px;
+
   &__filter {
-    text-align: center;
-    margin-bottom: 80px;
+    @include filter;
   }
 
   &__filter-btn {
-    background-color: #fff;
-    border: none;
-    @extend %dmsans-700;
-    font-size: 1.6rem;
-    color: #8b8b8b;
-    transition: color .3s;
-    cursor: pointer;
-    &+.products__filter-btn {
-      margin-left: 30px;
-    }
-    &.mixitup-control-active,
-    &:hover {
-      color: $title;
-      outline: transparent;
-    }
+    @include filter-btn;
   }
 
   &__content {
@@ -62,7 +47,6 @@
 
 .group-icons {
   position: absolute;
-  z-index: 10;
   display: flex;
   transition: opacity .3s;
   opacity: 0;
@@ -78,6 +62,7 @@
     background-color: #fff;
     transform: translateY(65px);
     transition: all .3s;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
   }
 
   & .group-icons__item:hover {

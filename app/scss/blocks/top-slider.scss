@@ -1,11 +1,13 @@
 .top-slider {
+
+  &__items {
   background-color: $accent;
-  @include big-container;
+  }
 
   &__item {
     overflow: hidden;
   }
-
+  
   &__inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -13,12 +15,12 @@
     display: flex;
     align-items: center;
   }
-
+  
   &__content {
     max-width: 470px;
     margin-right: 60px;
   }
-
+  
   &__title {
     margin-bottom: 30px;
     @extend %rubik-500;
@@ -27,7 +29,7 @@
     color: $title-accent;
     text-transform: uppercase;
   }
-
+  
   &__text {
     margin-bottom: 40px;
     max-width: 370px;
@@ -36,7 +38,7 @@
     line-height: 30px;
     color: #436372;
   }
-  
+
   &__btn {
     display: flex;
     padding: 25px 20px 25px 30px;
@@ -48,21 +50,19 @@
     background-color: $link;
     cursor: pointer;
     transition: background-color .3s;
-  }
-  
-  &__btn-arrow {
+    &-arrow {
     margin-left: 60px;
     transition: transform .5s;
-  }
-
-  &__btn:hover {
+    }
+    &:hover {
     background-color: #436372;
-  }
-
-  &__btn:hover &__btn-arrow {
-      transform: translateX(5px);
     }
 
+    &:hover &-arrow {
+    transform: translateX(5px);
+    }
+  }
+  
   &__img {
     margin-right: -115px;
   }
