@@ -22,13 +22,9 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.big-container {
-  max-width: 1800px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+    &--big {
+      max-width: 1800px;;
+    }
 }
 
 a {

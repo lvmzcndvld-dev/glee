@@ -15,7 +15,7 @@
     grid-template-rows: repeat(2, minmax(max-content, 380px));
     grid-gap: 30px;
   }
-  
+
   &__item {
     position: relative;
     display: flex;
@@ -24,6 +24,12 @@
     justify-content: center;
     padding: 10px 30px 95px;
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+    &:hover {
+      .products__icons {
+        opacity: 1;
+      }
+    }
   }
 
   &__descr {
@@ -42,15 +48,15 @@
     @extend %dmsans-700;
     color: $link;
   }
-}
 
-.group-icons {
-  position: absolute;
-  display: flex;
-  transition: opacity .3s;
-  opacity: 0;
+  &__icons {
+    position: absolute;
+    display: flex;
+    transition: opacity .3s;
+    opacity: 0;
+  }
 
-  &__item {
+  &__icons-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,16 +70,13 @@
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
   }
 
-  & .group-icons__item:hover {
+  & .products__icons-item:hover {
     background-color: $link;
+
     svg {
       path {
         fill: rgb(255, 255, 255);
       }
     }
-  }
-
-  &--hover {
-    opacity: 1;
   }
 }

@@ -1,13 +1,13 @@
 .top-slider {
 
   &__items {
-  background-color: $accent;
+    background-color: $accent;
   }
 
   &__item {
     overflow: hidden;
   }
-  
+
   &__inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -15,12 +15,12 @@
     display: flex;
     align-items: center;
   }
-  
+
   &__content {
     max-width: 470px;
     margin-right: 60px;
   }
-  
+
   &__title {
     margin-bottom: 30px;
     @extend %rubik-500;
@@ -29,7 +29,7 @@
     color: $title-accent;
     text-transform: uppercase;
   }
-  
+
   &__text {
     margin-bottom: 40px;
     max-width: 370px;
@@ -50,19 +50,21 @@
     background-color: $link;
     cursor: pointer;
     transition: background-color .3s;
-    &-arrow {
-    margin-left: 60px;
-    transition: transform .5s;
-    }
+
     &:hover {
-    background-color: #436372;
+      background-color: #436372;
+    }
+
+    &-arrow {
+      margin-left: 60px;
+      transition: transform .5s;
     }
 
     &:hover &-arrow {
-    transform: translateX(5px);
+      transform: translateX(5px);
     }
   }
-  
+
   &__img {
     margin-right: -115px;
   }
@@ -72,10 +74,12 @@
     justify-content: center;
     transform: translateY(-75px);
     height: 0;
+
     li {
       padding: 0 6px;
       transition: background-color .3s;
     }
+
     button {
       width: 30px;
       height: 30px;
@@ -89,9 +93,11 @@
       cursor: pointer;
       outline: transparent;
     }
+
     button:hover {
       background-color: #fff;
     }
+
     .slick-active {
       button {
         background-color: #fff;
