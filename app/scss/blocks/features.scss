@@ -1,12 +1,14 @@
 .features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   background-color: $bg;
 
   &__item {
     display: flex;
     justify-content: center;
     padding: 45px 0;
+
     border-right: 1px solid #e8e4df;
 
     &:last-child {
@@ -16,12 +18,14 @@
 
   &__item-content {
     position: relative;
+
     transform: translateX(30px);
+
     &::before {
       content: '';
       position: absolute;
       top: 15px;
-      left: -70px;
+      left: -80px;
     }
 
     &--support::before {
@@ -39,15 +43,15 @@
 
   &__item-title {
     @extend %dmsans-700;
-    font-size: 1.8rem;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 2.22;
     color: #414141;
   }
 
   &__item-text {
     @extend %dmsans-400;
-    font-size: 1.6rem;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 1.88;
     color: #585858;
 
     span {

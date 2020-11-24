@@ -17,10 +17,13 @@
 
   &__link {
     @extend %rubik-500;
-    font-size: 1.5rem;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 1.06;
+
     color: #466372;
+
     transition: color .3s, opacity .3s;
+
     &:hover {
       color: $link;
       opacity: .9;
@@ -28,7 +31,7 @@
   }
 
   &__item {
-    & + & {
+    &+& {
       margin-left: 35px;
     }
   }
@@ -38,13 +41,14 @@
   display: flex;
 
   &__search {
-    background-image: url('../images/icons/search-icon.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
     width: 50px;
     height: 50px;
     margin-right: 20px;
+
     border-radius: 50%;
+    background-image: url('../images/icons/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
     background-color: #edf1f4;
   }
 
@@ -54,6 +58,7 @@
     align-items: center;
     width: 180px;
     margin-right: 20px;
+
     border-radius: 25px;
     background-color: $accent;
   }
@@ -61,56 +66,63 @@
   &__line {
     height: 32px;
     width: 1px;
+
     background-color: #fde7d3;
   }
 
   &__link {
     position: relative;
+
+    width: 50px;
+    height: 50px;
+
     @extend %dmsans-400;
-    font-size: 1rem;
-    line-height: 27px;
+    font-size: 10px;
+    line-height: 2.7;
     text-align: center;
+
+
     color: #243f4d;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
     &--wishlist {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
       background-image: url('../images/icons/heart-icon.svg');
-      background-repeat: no-repeat;
-      background-position: center center;
     }
-  
+
     &--cart {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
       background-image: url('../images/icons/cart-icon.svg');
-      background-repeat: no-repeat;
-      background-position: center center;
     }
   }
-  
-  
+
+
   &__num {
     position: absolute;
     top: 8px;
     right: 5px;
+
     width: 16px;
     height: 16px;
-    line-height: 16px;
+
+    font-size: 10px;
+    line-height: 1.6;
     text-align: center;
+
     border-radius: 50%;
     background-color: #fff;
   }
 
   &__btn {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: #a3bbc8;
     background-image: url('../images/icons/menu-dots.svg');
     background-repeat: no-repeat;
     background-position: center center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #a3bbc8;
+    
     cursor: pointer;
   }
 }

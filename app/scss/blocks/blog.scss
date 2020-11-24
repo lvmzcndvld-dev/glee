@@ -1,8 +1,20 @@
 .blog {
-  &__wrapper {
+  &__head {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 250px;
+  }
+
+  &__wrapper {
+    min-height: 435px;
+    background-color: $bg;
+  }
+  
+  &__wrapper-inner {
+    margin-bottom: -250px;
+    
+    transform: translateY(-250px);
   }
 
   &__title {
@@ -11,21 +23,29 @@
 
   &__link {
     position: relative;
+
+    margin-bottom: 45px;
     padding-right: 26px;
-    margin-bottom: 35px;
+
     @extend %dmsans-700;
+    font-size: 16px;
+    line-height: 1;
+
     color: #262626;
 
     &::after {
       content: '';
       position: absolute;
+      top: 2px;
+
+      height: 12px;
+      width: 7px;
+      margin-left: 20px;
+
       background-image: url('../images/icons/arrow-right.svg');
       background-repeat: no-repeat;
       background-size: contain;
-      top: 6px;
-      margin-left: 20px;
-      height: 12px;
-      width: 7px;
+
       transition: transform .3s;
     }
 
@@ -39,16 +59,19 @@
   &__items {
     position: relative;
     z-index: 5;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
+
+    display: flex;
+    justify-content: space-between;
   }
 
   &__item {
     position: relative;
-    height: 100%;
-    background-color: #fff;
+
+    min-height: 100%;
+    max-width: 370px;
+
     border-radius: 5px;
+    background-color: #fff;
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
   }
 
@@ -61,22 +84,30 @@
 
   &__category-title {
     position: absolute;
-    padding: 4px 30px;
+
+    padding: 8px 30px;
     margin-left: 30px;
+
     @extend %poppins-700;
-    font-size: 1.4rem;
+    font-size: 14px;
+    line-height: 1.42;
     text-transform: uppercase;
+
     color: #fff;
     background-color: $link;
-    border-radius: 15px;
+    border-radius: 30px;
+
     transform: translateY(-50%);
   }
 
   &__text {
-    padding: 30px 0 10px;
     margin-bottom: 65px;
+    padding: 30px 0 10px;
+
     @extend %dmsans-500;
-    font-size: 1.8rem;
+    font-size: 18px;
+    line-height: 1.3;
+
     color: #262626;
   }
 
@@ -85,12 +116,16 @@
     bottom: 0;
     left: 0;
     right: 0;
+
     display: flex;
     padding: 20px 0 30px;
     margin: 0 30px;
-    color: #222933;
-    font-size: 1.2rem;
+
+    font-size: 12px;
+    line-height: 1;
+
     border-top: 1px solid #e0e0e0;
+    color: #222933;
   }
 
   &__date {
@@ -99,10 +134,9 @@
 }
 
 
-.clients {
+.partners {
   padding: 100px 0 100px;
-  background-color: $bg;
-  
+
   &__list {
     display: flex;
     justify-content: center;

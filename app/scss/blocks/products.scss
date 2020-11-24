@@ -18,11 +18,13 @@
 
   &__item {
     position: relative;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding: 10px 30px 95px;
+
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
 
     &:hover {
@@ -35,25 +37,34 @@
   &__descr {
     position: absolute;
     bottom: 40px;
+
     text-align: center;
   }
 
   &__title {
     @extend %dmsans-500;
-    line-height: 40px;
+    line-height: 1;
+
     color: $title-accent;
   }
 
   &__price {
     @extend %dmsans-700;
+
+    font-size: 16px;
+    line-height: 2.5;
+
     color: $link;
   }
 
   &__icons {
     position: absolute;
+
     display: flex;
-    transition: opacity .3s;
+
     opacity: 0;
+
+    transition: opacity .3s;
   }
 
   &__icons-item {
@@ -63,11 +74,13 @@
     width: 45px;
     height: 45px;
     margin: 0 8px;
+
     border-radius: 50%;
     background-color: #fff;
-    transform: translateY(65px);
-    transition: all .3s;
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+    transition: all .3s;
+    transform: translateY(65px);
   }
 
   & .products__icons-item:hover {
