@@ -6,12 +6,6 @@ $(function () {
         autoplaySpead: 3000
     });
 
-    $('.products__item').hover (
-        function () {
-            $(this).find('.group-icons').toggleClass('group-icons--hover');
-        }
-    );
-
     var mixer = mixitup('.products__content', {
         selectors: {
             control: '.products__filter-btn'
