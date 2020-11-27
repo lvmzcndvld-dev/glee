@@ -1,21 +1,25 @@
 .special {
-  padding-top: 100px;
+  padding: 40px 0 30px;
 
   &__items {
     display: flex;
   }
-}
 
-.special-item {
-  position: relative;
+  &__item {
+    position: relative;
 
-  display: flex;
-  align-items: center;
-  min-height: 390px;
-  width: 100%;
-  padding: 85px 150px 85px 130px;
+    display: flex;
+    align-items: center;
+    min-height: 390px;
+    width: 100%;
+    padding: 85px 150px 85px 130px;
 
-  background-color: #feefe2;
+    background-color: #feefe2;
+
+    & + & {
+      margin-left: 30px;
+    }
+  }
 
   &__img {
     position: absolute;
@@ -30,7 +34,7 @@
   }
 
   &__title {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
     @extend %dmsans-700;
     font-size: 26px;
@@ -38,15 +42,11 @@
   }
 
   &__text {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     @extend %rubik-400;
     font-size: 16px;
     line-height: 1.87;
-  }
-
-  &+& {
-    margin-left: 30px;
   }
 
   &__btn {

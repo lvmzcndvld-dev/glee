@@ -26,7 +26,6 @@ body {
 
   &--big {
     max-width: 1800px;
-    ;
   }
 }
 
@@ -39,8 +38,6 @@ a {
 }
 
 .title {
-  margin: 65px 0 35px;
-
   @extend %dmsans-700;
   font-size: 36px;
   text-align: center;

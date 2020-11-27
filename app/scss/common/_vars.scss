@@ -36,6 +36,13 @@ $title-accent: #243f4d;
   font-weight: 700;
 }
 
+
+%title-margins {
+  margin: 65px 0 20px;
+}
+
+
+
 @mixin filter {
   text-align: center;
   margin-bottom: 80px;
@@ -51,7 +58,7 @@ $title-accent: #243f4d;
   cursor: pointer;
 
   &+& {
-    margin-left: 30px;
+    margin-left: 27px;
   }
 
   &.mixitup-control-active,

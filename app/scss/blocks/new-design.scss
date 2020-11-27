@@ -1,6 +1,10 @@
 .new-design {
   padding-bottom: 60px;
 
+  &__title {
+    @extend %title-margins;
+  }
+
   &__filter {
     @include filter;
   }
@@ -29,7 +33,7 @@
     background-position: center center;
   }
 
-  &__title {
+  &__item-title {
     max-width: 180px;
     margin-bottom: 15px;
 
@@ -37,7 +41,7 @@
     line-height: 1;
   }
 
-  &__subtitle {
+  &__item-subtitle {
     font-size: 16px;
     line-height: 1;
 
