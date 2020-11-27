@@ -131,7 +131,36 @@
     color: #222933;
   }
 
-  &__date {
-    margin-right: 30px;
+  &__date,
+  &__author {
+    position: relative;
+    padding-left: 16px;
+  }
+
+  &__author {
+    margin-left: 25px;
+  }
+
+  &__date::before,
+  &__author::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: -1px;
+
+    width: 12px;
+    height: 13px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__date::before {
+    background-image: url('../images/icons/calendar.svg');
+  }
+
+  &__author::before {
+    background-image: url('../images/icons/user.svg');
   }
 }
