@@ -10,16 +10,16 @@
     padding-bottom: 60px;
 
     border-bottom: 1px solid #dae4e9;
+  }
+
+  &__top-item {
+    margin-bottom: 8px;
+
+    line-height: 1.71;
 
     &--contact {
       width: 200px;
     }
-  }
-  
-  &__top-item {
-    margin-bottom: 8px;
-    
-    line-height: 1.71;
 
     &--nav {
       width: 200px;
@@ -63,10 +63,15 @@
     height: 38px;
   }
 
-  &__top-input {
-    display: block;
-    height: 100%;
+  &__top-label {
+    height: inherit;
     width: 63%;
+    display: block;
+  }
+
+  &__top-input {
+    height: inherit;
+    width: 100%;
     padding: 0 15px;
 
     border: none;

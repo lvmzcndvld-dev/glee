@@ -21,16 +21,23 @@
   }
 
   &__item {
+    position: relative;
+
     padding: 35px 0 0 35px;
 
     @extend %dmsans-700;
 
     color: $title;
     border-radius: 4px;
-    background-color: #f8f8f8;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  }
+
+  &__img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 
   &__item-title {

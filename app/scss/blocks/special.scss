@@ -49,7 +49,9 @@
     line-height: 1.87;
   }
 
-  &__btn {
+  &__link {
+    max-width: 183px;
+    
     display: flex;
     align-items: center;
     padding: 20px;
