@@ -1,10 +1,8 @@
 .terms-conditions {
-  padding-top: 40px;
-
   color: $title-accent;
 
   &__title {
-    margin: 60px 0 20px;
+    padding: 40px 0 20px;
 
     @extend %rubik-500;
     font-size: 24px;

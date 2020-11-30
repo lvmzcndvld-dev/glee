@@ -17,7 +17,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, minmax(max-content, 250px));
-    grid-gap: 30px;
+  gap: 30px;
   }
 
   &__item {
