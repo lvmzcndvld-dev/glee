@@ -1,0 +1,62 @@
+.achievements {
+  padding: 80px 0;
+  margin: 60px 0;
+
+  @extend %dmsans-700;
+  color: $title-accent;
+
+  background-color: $accent;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 80px;
+      width: 80px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: auto;
+    }
+
+    &--rate::before {
+      background-image: url('../images/icons/achievements/1.svg');
+    }
+
+    &--delivery::before {
+      background-image: url('../images/icons/achievements/2.svg');
+    }
+
+    &--time::before {
+      background-image: url('../images/icons/achievements/3.svg');
+    }
+
+    &--brands::before {
+      background-image: url('../images/icons/achievements/4.svg');
+    }
+  }
+
+  &__num {
+    margin-bottom: 15px;
+
+    font-size: 36px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.77;
+  }
+}
