@@ -8,8 +8,6 @@
 @import 'components/top';
 @import 'components/card-product';
 
-@import 'blocks/terms-conditions';
-@import 'blocks/login';
 @import 'blocks/top-slider';
 @import 'blocks/features';
 @import 'blocks/products';
@@ -18,7 +16,13 @@
 @import 'blocks/video-popup';
 @import 'blocks/blog';
 @import 'blocks/partners';
+
+@import 'blocks/login';
+
+@import 'blocks/terms-conditions';
+
 @import 'blocks/about';
 @import 'blocks/achievements';
+@import 'blocks/team';
 
 @import 'components/footer';

@@ -43,7 +43,6 @@
             <a class="header__nav-link header__nav-link--wishlist" href="#">
               <span class="header__nav-num header__nav-num--wishlist">0</span>
             </a>
-            <span class="header__nav-line"></span>
             <a class="header__nav-link header__nav-link--cart" href="#">
               <span class="header__nav-num header__nav-num--cart">0</span>
             </a>
@@ -105,7 +104,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
-        <div class="footer__top-item footer__top--contact">
+        <div class="footer__top-item footer__top-item--contact">
           <a class="logo footer__top-logo" href="#">
             <img class="logo__img" src="images/logo.png" alt="logo">
           </a>
@@ -171,8 +170,10 @@
             update protidin.
           </p>
           <form class="footer__top-form" action="#">
-            <input class="footer__top-input" id="input-email" type="email" name="email" placeholder="Email address"
-              required><label for="input-email"></label>
+            <label class="footer__top-label">
+              <span class="visually-hidden">Enter your email</span>
+              <input class="footer__top-input" type="email" name="email" placeholder="Email address" required>
+            </label>
             <button class="footer__top-btn" type="submit">Subscribe</button>
           </form>
         </div>
