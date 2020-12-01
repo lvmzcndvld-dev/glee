@@ -44,7 +44,10 @@
 
     cursor: pointer;
 
-    svg {
+    &-arrow {
+      width: 15px;
+      height: 11px;
+      
       margin-left: 20px;
 
       transition: transform .3s;
@@ -53,7 +56,7 @@
     &:hover {
       background-color: $title-accent;
 
-      svg {
+      .team__link-arrow {
         transform: translateX(5px);
       }
     }

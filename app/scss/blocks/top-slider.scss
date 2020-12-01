@@ -65,9 +65,13 @@
     }
 
     &-arrow {
+      width: 22px;
+      height: 9px;
       margin-left: 60px;
 
       transition: transform .5s;
+
+      fill: #fff;
     }
 
     &:hover &-arrow {

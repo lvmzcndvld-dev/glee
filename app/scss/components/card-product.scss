@@ -68,13 +68,22 @@
 
     cursor: pointer;
 
+    &--search,
+    &--cart,
+    &--heart {
+      width: 22px;
+      height: 22px;
+
+      fill: #a3bbc8;
+    }
+
     &:hover {
       background-color: $link;
 
-      svg {
-        path {
-          fill: rgb(255, 255, 255);
-        }
+      .card-product__icons-item--search,
+      .card-product__icons-item--cart,
+      .card-product__icons-item--heart {
+        fill: #fff;
       }
     }
   }
