@@ -7,6 +7,7 @@
 @import 'components/header';
 @import 'components/top';
 @import 'components/card-product';
+@import 'components/filter';
 
 @import 'blocks/top-slider';
 @import 'blocks/features';
@@ -24,5 +25,8 @@
 @import 'blocks/about';
 @import 'blocks/achievements';
 @import 'blocks/team';
+
+@import 'blocks/product-list';
+@import 'blocks/pagination';
 
 @import 'components/footer';
