@@ -33,20 +33,28 @@
       background-size: auto;
     }
 
-    &--rate::before {
-      background-image: url('../images/icons/achievements/rate.svg');
+    &--rate {
+      &::before {
+        background-image: url('../images/icons/achievements/rate.svg');
+      }
     }
 
-    &--delivery::before {
-      background-image: url('../images/icons/achievements/delivery-blue.svg');
+    &--delivery {
+      &::before {
+        background-image: url('../images/icons/achievements/delivery-blue.svg');
+      }
     }
 
-    &--time::before {
-      background-image: url('../images/icons/achievements/time.svg');
+    &--time {
+      &::before {
+        background-image: url('../images/icons/achievements/time.svg');
+      }
     }
 
-    &--brands::before {
-      background-image: url('../images/icons/achievements/brands.svg');
+    &--brands {
+      &::before {
+        background-image: url('../images/icons/achievements/brands.svg');
+      }
     }
   }
 

@@ -118,6 +118,10 @@
 
     &:last-child {
       margin-right: 0;
+
+      &::after {
+        display: none;
+      }
     }
 
     &::after {
@@ -131,10 +135,5 @@
 
       background-color: $default;
     }
-
-    &:last-child::after {
-      display: none;
-    }
-
   }
 }

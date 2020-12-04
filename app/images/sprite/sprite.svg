@@ -17,4 +17,10 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 11" id="thin-arrow">
     <path d="M8.931 11.01a.673.673 0 00.425-.16l5.434-4.92c.007 0 .013-.01.019-.01l.031-.03v-.01a.567.567 0 00.138-.47.6.6 0 00-.155-.31l-.033-.03L9.355.16a.65.65 0 00-.874.02.578.578 0 00.024.84l4.311 3.89H.631a.608.608 0 00-.617.59.6.6 0 00.617.59h12.186l-4.311 3.9a.566.566 0 00-.024.83.608.608 0 00.449.19z" fill="#fff" fill-rule="evenodd"></path>
   </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15" id="list">
+    <path d="M.007 0h4.422v4.172H.007V0zm5.828 0h14.159v4.172H5.835V0zM.007 5.413h4.422v4.172H.007V5.413zm5.828 0h14.159v4.172H5.835V5.413zM.007 10.827h4.422V15H.007v-4.171zm5.828 0h14.159V15H5.835v-4.171z" fill-rule="evenodd"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" id="grid">
+    <path d="M0 3.75h3.75V0H0v3.75zM5.625 15h3.75v-3.75h-3.75V15zM0 15h3.75v-3.75H0V15zm0-5.625h3.75v-3.75H0v3.75zm5.625 0h3.75v-3.75h-3.75v3.75zM11.25 0v3.75H15V0h-3.75zM5.625 3.75h3.75V0h-3.75v3.75zm5.625 5.625H15v-3.75h-3.75v3.75zm0 5.625H15v-3.75h-3.75V15z" fill-rule="evenodd"></path>
+  </symbol>
 </svg>

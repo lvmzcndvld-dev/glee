@@ -44,15 +44,6 @@
 
     cursor: pointer;
 
-    &-arrow {
-      width: 15px;
-      height: 11px;
-      
-      margin-left: 20px;
-
-      transition: transform .3s;
-    }
-
     &:hover {
       background-color: $title-accent;
 
@@ -60,6 +51,16 @@
         transform: translateX(5px);
       }
     }
+  }
+
+
+  &__link-arrow {
+    width: 15px;
+    height: 11px;
+
+    margin-left: 20px;
+
+    transition: transform .3s;
   }
 
   &__items {

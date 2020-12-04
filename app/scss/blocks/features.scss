@@ -30,16 +30,22 @@
       left: -80px;
     }
 
-    &--support::before {
-      content: url('../../images/icons/features/support.svg');
+    &--support {
+      &::before {
+        content: url('../../images/icons/features/support.svg');
+      }
     }
 
-    &--delivery::before {
-      content: url('../../images/icons/features/delivery.svg');
+    &--delivery {
+      &::before {
+        content: url('../../images/icons/features/delivery.svg');
+      }
     }
 
-    &--secure::before {
-      content: url('../../images/icons/features/secure.svg');
+    &--secure {
+      &::before {
+        content: url('../../images/icons/features/secure.svg');
+      }
     }
   }
 

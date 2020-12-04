@@ -141,26 +141,32 @@
     margin-left: 25px;
   }
 
-  &__date::before,
-  &__author::before {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: -1px;
+  &__date,
+  &__authore {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: -1px;
 
-    width: 12px;
-    height: 13px;
+      width: 12px;
+      height: 13px;
 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
   }
 
-  &__date::before {
-    background-image: url('../images/icons/calendar.svg');
+  &__date {
+    &::before {
+      background-image: url('../images/icons/calendar.svg');
+    }
   }
 
-  &__author::before {
-    background-image: url('../images/icons/user.svg');
+  &__author {
+    &::before {
+      background-image: url('../images/icons/user.svg');
+    }
   }
 }

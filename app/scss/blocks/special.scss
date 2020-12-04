@@ -69,16 +69,6 @@
 
     cursor: pointer;
 
-    &-arrow {
-      height: 9px;
-      width: 22px;
-      margin-left: 45px;
-
-      transition: transform .5s;
-
-      fill: #436372;
-    }
-
     &:hover {
       color: #fff;
       background-color: #436372;
@@ -89,5 +79,15 @@
 
       fill: #fff;
     }
+  }
+
+  &__link-arrow {
+    height: 9px;
+    width: 22px;
+    margin-left: 45px;
+
+    transition: transform .5s;
+
+    fill: #436372;
   }
 }
