@@ -142,12 +142,12 @@
   }
 
   &__date,
-  &__authore {
+  &__author {
     &::before {
       content: '';
       position: absolute;
       left: 0px;
-      top: -1px;
+      top: -2px;
 
       width: 12px;
       height: 13px;

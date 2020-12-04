@@ -1,4 +1,36 @@
 $(function () {
+    $('.product-details__related-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        appendArrows: $('.product-details__related-title'),
+    });
+
+    $('.product-tabs__top-item').on('click', function (e) {
+        e.preventDefault();
+        $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
+        $(this).addClass('product-tabs__top-item--active');
+
+        $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
+        $($(this).attr('href')).addClass('product-tabs__content-item--active');
+    })
+
+    $('.product-details__content-input').styler();
+
+    $('.product-slider__thumb').slick({
+        asNavFor: '.product-slider__big',
+        focusOnSelect: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        vertical: true,
+        draggable: false,
+    });
+    $('.product-slider__big').slick({
+        asNavFor: '.product-slider__thumb',
+        draggable: false,
+        arrows: false,
+        fade: true,
+    });
+
     $('.product-list__filter-btn').on('click', function () {
         $('.product-list__filter-btn').removeClass('product-list__filter-btn--active');
         $(this).addClass('product-list__filter-btn--active');
@@ -54,7 +86,8 @@ $(function () {
         dots: true,
         arrows: false,
         autoplay: true,
-        autoplaySpead: 3000
+        autoplaySpead: 3000,
+        fade: true,
     });
 
     var mixer = mixitup('.products__content', {
