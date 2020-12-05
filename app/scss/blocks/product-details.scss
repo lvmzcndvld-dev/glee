@@ -1,0 +1,305 @@
+.product-details {
+  &__inner {
+    display: flex;
+    min-height: 530px;
+    padding-top: 60px;
+    margin-bottom: 100px;
+  }
+
+  &__slider {
+    display: flex;
+  }
+
+  &__content {
+    margin-left: 70px;
+    padding: 25px 0;
+  }
+
+  &__content-title {
+    margin-bottom: 20px;
+
+    @extend %rubik-400;
+    font-size: 40px;
+    color: #333;
+  }
+
+  &__content-price {
+    padding-top: 30px;
+
+    @extend %rubik-400;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  &__content-text {
+    margin: 25px 0;
+
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: $title-accent;
+  }
+
+  &__content-btn {
+    height: 53px;
+    margin-left: 15px;
+    padding: 0 50px;
+
+    @extend %rubik-400;
+    font-size: 15px;
+    line-height: 1.87;
+    color: #fff;
+    text-transform: uppercase;
+
+    background-color: $link;
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+  }
+
+  &__content-info {
+    margin-top: 50px;
+  }
+
+  &__content-item,
+  &__content-link {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: $title-accent;
+  }
+
+  &__related {
+    position: relative;
+  }
+
+  &__related-title {
+    margin-bottom: 15px;
+
+    text-align: left;
+    color: $title-accent;
+  }
+
+  &__related-slider {
+    display: flex;
+    flex-wrap: wrap;
+
+    overflow-x: hidden;
+
+    .card-product {
+      max-width: 270px;
+      width: 100%;
+      min-height: 380px;
+      margin: 0 10px;
+    }
+
+
+    .slick-track {
+      padding: 55px 0 50px;
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    right: 0;
+
+    height: 50px;
+    width: 50px;
+
+    font-size: 0;
+
+    background-color: transparent;
+    border: 2px solid $link;
+    border-radius: 5px;
+
+    cursor: pointer;
+    outline: transparent;
+
+    transition: border-color .3s;
+
+    path {
+      fill: $link;
+    }
+  }
+
+  .slick-prev {
+    right: 70px;
+
+    transform: rotate(-180deg);
+  }
+
+  .slick-disabled {
+    border-color: #edf1f4;
+  }
+}
+
+.jq-number {
+  position: relative;
+
+  padding: 0;
+}
+
+.jq-number__field {
+  width: 152px;
+
+  border: 1px solid $link;
+  border-bottom-color: $link;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.jq-number__field input {
+  position: relative;
+
+  width: 100%;
+  height: 52px;
+  padding: 0;
+
+  @extend %rubik-400;
+  text-align: center;
+  color: #333;
+
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.jq-number__spin {
+  position: absolute;
+  top: 2px;
+
+  width: 52px;
+  height: 52px;
+
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 23px;
+
+    width: 8px;
+    height: 1px;
+
+    background-color: $title;
+  }
+
+  &.minus {
+    border-right: 1px solid $link;
+  }
+
+  &.plus {
+    right: 0;
+
+    border-left: 1px solid $link;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 21px;
+      left: 26px;
+
+      width: 1px;
+      height: 8px;
+
+      background-color: $title;
+    }
+  }
+}
+
+
+.product-slider {
+  height: 530px;
+
+  .slick-slide.slick-current.slick-active {
+    margin-bottom: 0;
+  }
+
+  &__thumb {
+    margin-right: 25px;
+    width: 140px;
+  }
+
+  &__thumb-item {
+    width: 140px;
+    height: 160px;
+    padding: 0 15px;
+    margin-bottom: 25px;
+    cursor: pointer;
+
+    border: 1px solid #f2f2f2;
+
+    img {
+      width: 138px;
+      height: 158px;
+      object-fit: scale-down;
+    }
+  }
+
+  &__big {
+    width: 390px;
+    height: 538px;
+
+    border: 1px solid #f2f2f2;
+
+    img {
+      width: 390px;
+      height: 530px;
+      object-fit: scale-down;
+    }
+  }
+
+  &__big-item {
+    height: 530px;
+  }
+}
+
+.product-tabs {
+  &__top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+
+  &__top-item {
+    width: 240px;
+    padding: 5px 0;
+
+    @extend %rubik-500;
+    font-size: 18px;
+    line-height: 2.22;
+    text-align: center;
+    color: $title-accent;
+
+    background-color: #edf1f4;
+    border-radius: 5px;
+
+    &--active {
+      background-color: $link;
+      color: #fff;
+    }
+
+    &+& {
+      margin-left: 13px;
+    }
+  }
+
+  &__content-item {
+    display: none;
+    margin-bottom: 55px;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__content-text {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: $title-accent;
+  }
+}

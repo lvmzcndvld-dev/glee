@@ -1,0 +1,153 @@
+.product-list {
+  padding: 60px 0 120px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 30px;
+  }
+
+  &__filter {
+    display: flex;
+    align-items: center;
+    margin: 0 0 40px 30px;
+
+    span {
+      font-size: 16px;
+      color: $title-accent;
+    }
+  }
+
+  &__filter-btn {
+    border: none;
+    background-color: transparent;
+    margin-left: 15px;
+    line-height: 0;
+    cursor: pointer;
+    outline: transparent;
+
+    fill: $link;
+
+
+    &.product-list__filter-btn--active {
+      fill: $title-accent;
+    }
+  }
+
+  .button-grid__img {
+    height: 15px;
+    width: 15px;
+  }
+
+  .button-list__img {
+    height: 15px;
+    width: 20px;
+  }
+
+  .card-product {
+    min-height: 380px;
+    max-width: 270px;
+    width: 100%;
+    margin-bottom: 40px;
+
+    &.card-product--list {
+      display: flex;
+      flex-direction: row;
+      min-width: 100%;
+      min-height: 500px;
+      padding: 0;
+
+      box-shadow: none;
+
+      .card-product__wrapper {
+        padding: 20px 0;
+      }
+
+      .card-product__img {
+        display: inline-block;
+
+        height: 100%;
+        max-width: 370px;
+        width: 100%;
+        margin-right: auto;
+        padding: 30px;
+        margin-right: 55px;
+
+        object-fit: contain;
+
+        border: 1px solid #f2f2f2;
+      }
+
+      .card-product__content {
+        display: block;
+      }
+
+      .card-product__descr {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        text-align: left;
+      }
+
+      .card-product__descr-title {
+        margin-bottom: 10px;
+
+        @extend %rubik-400;
+        font-size: 40px;
+        color: #333;
+
+        order: -1;
+      }
+
+      .card-product__descr-price {
+        padding: 30px 0;
+
+        @extend %rubik-400;
+        font-size: 30px;
+        line-height: 1.5;
+        color: #333;
+      }
+
+      .card-product__rating {
+        order: -1;
+      }
+
+      .card-product__text {
+        font-size: 16px;
+        line-height: 1.87;
+        color: $title-accent;
+        order: 1;
+      }
+
+      .card-product__icons {
+        position: relative;
+        justify-content: start;
+        width: 100%;
+        opacity: 1;
+        transform: translateY(0);
+
+        a {
+          display: none;
+        }
+      }
+
+      .card-product__icons-item {
+        height: 50px;
+        width: 50px;
+        border-radius: 0;
+        margin-left: 0;
+      }
+
+      &+.pagination {
+        display: block;
+      }
+    }
+  }
+}

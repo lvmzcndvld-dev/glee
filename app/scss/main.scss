@@ -5,13 +5,30 @@
 @import 'common/global';
 
 @import 'components/header';
+@import 'components/page-top';
+@import 'components/card-product';
+@import 'components/filter';
 
 @import 'blocks/top-slider';
 @import 'blocks/features';
 @import 'blocks/products';
 @import 'blocks/special';
 @import 'blocks/new-design';
-// @import 'blocks/video-popup';
-// @import 'blocks/blog';
+@import 'blocks/video-popup';
+@import 'blocks/blog';
+@import 'blocks/partners';
+
+@import 'blocks/login';
+
+@import 'blocks/terms-conditions';
+
+@import 'blocks/about';
+@import 'blocks/achievements';
+@import 'blocks/team';
+
+@import 'blocks/product-list';
+@import 'blocks/pagination';
+
+@import 'blocks/product-details';
 
 @import 'components/footer';

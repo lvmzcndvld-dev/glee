@@ -10,6 +10,7 @@ body {
 
   @extend %rubik-400;
   font-size: 14px;
+  line-height: 1;
   font-style: normal;
 
   color: $default;
@@ -26,7 +27,6 @@ body {
 
   &--big {
     max-width: 1800px;
-    ;
   }
 }
 
@@ -39,11 +39,25 @@ a {
 }
 
 .title {
-  margin: 65px 0 35px;
-
   @extend %dmsans-700;
   font-size: 36px;
   text-align: center;
 
   color: $title;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

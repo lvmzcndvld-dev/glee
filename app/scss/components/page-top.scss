@@ -1,0 +1,49 @@
+.page-top {
+  padding: 33px 0;
+  margin-bottom: 60px;
+
+  background-color: #edf1f4;
+
+  &__title {
+    @extend %rubik-300;
+    font-size: 36px;
+    text-align: center;
+
+    color: #222933;
+  }
+
+  &__breadcrumbs {
+    margin-top: 5px;
+  }
+
+  &__breadcrumbs-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__breadcrumbs-item {
+    position: relative;
+
+    margin-right: 20px;
+
+    line-height: 1.71;
+
+    color: rgba(34, 41, 51, 0.6);
+
+    &::after {
+      content: '/';
+      position: absolute;
+      right: -14px;
+      top: 0px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

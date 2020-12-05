@@ -1,0 +1,193 @@
+.filter {
+  max-width: 270px;
+  width: 100%;
+
+  &__title {
+    position: relative;
+
+    margin-bottom: 30px;
+
+    @extend %dmsans-700;
+    font-size: 18px;
+    color: $title-accent;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      height: 2px;
+      width: 38px;
+      margin-left: 15px;
+
+      background-color: $link;
+    }
+  }
+
+  &__item {
+    margin-bottom: 70px;
+  }
+}
+
+.filter-category {
+  &__item {
+    padding: 0 15px;
+    margin-bottom: 2px;
+
+    border-radius: 5px;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: rgba(163, 187, 200, .2);
+    }
+  }
+
+  &__link {
+    position: relative;
+
+    display: block;
+
+    font-size: 16px;
+    line-height: 3.07;
+    color: $title-accent;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 10px;
+      top: 20px;
+      width: 6px;
+      height: 11px;
+      background-image: url('../images/icons/angle-right.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+}
+
+.filter-price {
+  &__nums {
+    display: flex;
+    justify-content: space-between;
+
+    line-height: 3.07;
+    color: $title-accent;
+  }
+
+  .irs--flat {
+    height: 15px;
+  }
+
+  .irs--flat .irs-line {
+    top: 0;
+    height: 2px;
+    background-color: #c2d2db;
+    border-radius: 1px;
+  }
+
+  .irs--flat .irs-bar {
+    top: 0;
+    height: 3px;
+    background-color: $link;
+  }
+
+  .irs--flat .irs-handle {
+    top: -6px;
+    width: 15px;
+    height: 15px;
+    background-color: $link;
+  }
+
+  .irs--flat .irs-handle>i:first-child {
+    display: none;
+  }
+
+  .irs--flat .irs-min,
+  .irs--flat .irs-max {
+    display: none;
+  }
+
+  .irs--flat .irs-from,
+  .irs--flat .irs-to,
+  .irs--flat .irs-single {
+    display: none;
+  }
+}
+
+.filter-brands {
+  &__label {
+    display: block;
+
+    margin-bottom: 2px;
+
+    cursor: pointer;
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+
+    &:checked+.filter-brands__checkbox {
+      background-color: #edf1f4;
+      color: $title-accent;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+
+    font-size: 16px;
+
+    border-radius: 5px;
+  }
+
+  &__name {
+    width: 100%;
+    color: $title-accent;
+  }
+}
+
+.filter-recent {
+  &__item {
+    margin-bottom: 25px;
+  }
+
+  &__link {
+    display: block;
+
+    display: flex;
+  }
+
+  &__img {
+    height: 70px;
+    width: 70px;
+
+    object-fit: scale-down;
+    border: 2px solid #f2f2f2;
+  }
+
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    padding-top: 3px;
+
+    color: #333;
+  }
+
+  &__title {
+    line-height: 1.13;
+  }
+
+  &__price {
+    font-size: 15px;
+  }
+
+  .jq-ry-container {
+    padding: 0;
+    margin-left: -2px;
+  }
+}

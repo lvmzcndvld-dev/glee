@@ -7,17 +7,31 @@
     display: flex;
     justify-content: space-between;
 
-    padding-bottom: 70px;
+    padding-bottom: 60px;
 
     border-bottom: 1px solid #dae4e9;
   }
 
-  &__top-item--nav {
-    width: 200px;
+  &__top-item {
+    margin-bottom: 8px;
+
+    line-height: 1.71;
+
+    &--contact {
+      width: 200px;
+    }
+
+    &--nav {
+      width: 200px;
+    }
+
+    &--form {
+      max-width: 270px;
+    }
   }
 
   &__top-title {
-    margin: 16px 0 21px;
+    margin: 16px 0 19px;
 
     @extend %dmsans-700;
     font-size: 16px;
@@ -25,14 +39,6 @@
     text-transform: uppercase;
 
     color: #1f2044;
-  }
-
-  &__top-item {
-    margin-bottom: 7px;
-  }
-
-  &__top--contact {
-    width: 200px;
   }
 
   &__top-logo {
@@ -44,12 +50,7 @@
     display: block;
     margin-bottom: 10px;
 
-    line-height: 1.71;
     font-style: normal;
-  }
-
-  &__top-item-form {
-    max-width: 270px;
   }
 
   &__top-text {
@@ -62,10 +63,15 @@
     height: 38px;
   }
 
-  &__top-input {
+  &__top-label {
+    height: inherit;
+    width: 63%;
     display: block;
-    height: 100%;
-    width: 60%;
+  }
+
+  &__top-input {
+    height: inherit;
+    width: 100%;
     padding: 0 15px;
 
     border: none;
@@ -83,7 +89,7 @@
   &__top-btn {
     display: block;
     height: 100%;
-    width: 40%;
+    width: 37%;
 
     @extend %dmsans-400;
     line-height: 1.71;
@@ -108,10 +114,14 @@
 
   &__bottom-item {
     position: relative;
-    margin: 0 14px;
+    margin: 0 16px;
 
     &:last-child {
       margin-right: 0;
+
+      &::after {
+        display: none;
+      }
     }
 
     &::after {
@@ -125,10 +135,5 @@
 
       background-color: $default;
     }
-
-    &:last-child::after {
-      display: none;
-    }
-
   }
 }
