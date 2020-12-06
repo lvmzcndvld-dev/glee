@@ -1,0 +1,253 @@
+.blog-page {
+  padding: 60px 120px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 830px;
+    margin-right: 70px;
+
+    .pagination {
+      justify-content: start;
+      margin: 0;
+      padding: 25px 0 60px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 50px;
+  }
+
+  &__item-link {
+    display: block;
+    max-width: 830px;
+  }
+
+  &__item-img {
+    max-width: 830px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  &__item-info {
+    position: relative;
+    z-index: 5;
+
+    display: flex;
+    max-width: 290px;
+    padding: 30px 30px 30px 25px;
+    margin-top: -72px;
+
+    @extend %rubik-400;
+    font-size: 12px;
+
+    color: #fff;
+    background-color: $link;
+  }
+
+  &__item-date,
+  &__item-author {
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: -2px;
+
+      width: 12px;
+      height: 13px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+  &__item-date {
+    margin-right: 30px;
+
+    &::before {
+      background-image: url('../images/icons/calendar-white.svg');
+    }
+  }
+
+  &__item-author {
+    &::before {
+      background-image: url('../images/icons/user-white.svg');
+    }
+  }
+
+  &__item-title {
+    margin: 40px 0 35px;
+    @extend %rubik-400;
+    font-size: 36px;
+    color: #333;
+  }
+
+  &__item-text {
+    margin-bottom: 35px;
+
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: $title-accent;
+  }
+
+  &__item-more {
+    display: inline-block;
+
+    padding: 15px 20px;
+    font-size: 15px;
+    color: $link;
+    border: 1px solid $link;
+
+    &:hover {
+      svg {
+        transform: translateX(5px);
+      }
+    }
+
+    svg {
+      width: 22px;
+      height: 9px;
+      margin-left: 45px;
+
+      transition: transform .5s;
+
+      fill: $link;
+    }
+  }
+
+  &__aside {
+    max-width: 270px;
+    width: 100%;
+  }
+
+  &__search {
+    margin-bottom: 55px;
+  }
+
+  &__search-input {
+    position: relative;
+    height: 43px;
+    width: 100%;
+    margin: 0;
+    padding: 5px 55px 5px 10px;
+
+    border: 2px solid #ebf1f3;
+    border-radius: 5px;
+
+    outline: transparent;
+  }
+
+  &__search-btn {
+    position: absolute;
+
+    width: 48px;
+    height: 43px;
+    margin-left: -48px;
+
+    border: none;
+    background-color: #ebf1f3;
+    border-radius: 5px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 13px;
+      left: 16px;
+
+      height: 17px;
+      width: 17px;
+
+      background-image: url('../images/icons/search.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .recent-post {
+
+    &__title {
+      position: relative;
+
+      margin-bottom: 30px;
+
+      @extend %dmsans-700;
+      font-size: 18px;
+      color: $title-accent;
+      text-transform: uppercase;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 8px;
+        height: 2px;
+        width: 38px;
+        margin-left: 15px;
+
+        background-color: $link;
+      }
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    &__link {
+      height: 70px;
+      min-width: 70px;
+
+      margin-right: 20px;
+    }
+
+    &__link-img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+    }
+
+    &__box-title {
+      margin-bottom: 10px;
+
+      @extend %rubik-400;
+      line-height: 1.42;
+
+      color: #333;
+    }
+
+    &__box-date {
+      position: relative;
+
+      padding-left: 16px;
+
+      @extend %rubik-400;
+      font-size: 12px;
+      line-height: 1.87;
+
+      &::before {
+        content: '';
+        position: absolute;
+
+        left: 0px;
+        top: 3px;
+
+        width: 12px;
+        height: 13px;
+
+        background-image: url('../images/icons/calendar.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+  }
+}
