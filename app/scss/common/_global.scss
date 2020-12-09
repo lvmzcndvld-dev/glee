@@ -2,6 +2,7 @@ html,
 body {
   background-color: #fff;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -32,8 +33,6 @@ body {
 
 a {
   @extend %rubik-400;
-  font-size: 14px;
-  line-height: 1.71;
 
   color: $default;
 }
@@ -44,6 +43,10 @@ a {
   text-align: center;
 
   color: $title;
+
+  @media (max-width: $xx) {
+    font-size: 30px;
+  }
 }
 
 .visually-hidden {

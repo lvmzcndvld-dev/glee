@@ -4,17 +4,17 @@
   margin: 0 auto;
 
   &__label {
+    display: block;
+
     color: #436372;
 
     &--checkbox {
+      position: relative;
+
+      padding-left: 30px;
+
       cursor: pointer;
     }
-  }
-  
-  &__checkbox {
-    background-color: #ebebeb;
-
-    cursor: pointer;
   }
 
   &__box {
@@ -33,6 +33,32 @@
     font-size: 20px;
 
     border: 2px solid #f6f6f6;
+
+    cursor: pointer;
+
+  }
+
+  &__input-checkbox {
+    @extend %checkbox-hidden;
+
+    &:checked+.login__checkbox {
+      background-image: url('../images/icons/check.svg');
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #ebebeb;
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    left: 0;
+
+    width: 14px;
+    height: 14px;
+
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
   }
 
   &__btn {

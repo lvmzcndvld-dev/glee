@@ -51,33 +51,6 @@ $title-accent: #243f4d;
   margin: 65px 0 20px;
 }
 
-
-
-@mixin filter {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-@mixin filter-btn {
-  background-color: #fff;
-  border: none;
-  @extend %dmsans-700;
-  font-size: 16px;
-  color: #8b8b8b;
-  transition: color .3s;
-  cursor: pointer;
-
-  &+& {
-    margin-left: 27px;
-  }
-
-  &.mixitup-control-active,
-  &:hover {
-    color: $title;
-    outline: transparent;
-  }
-}
-
 %checkbox-hidden {
   width: 1px;
   height: 1px;
@@ -85,6 +58,15 @@ $title-accent: #243f4d;
   clip: rect(0 0 0 0);
   position: absolute;
 }
+
+
+$xx: 440px;
+$xs: 575px;
+$sm: 768px;
+$md: 1024px;
+$lg: 1200px;
+$hg: 1366px;
+
 
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});

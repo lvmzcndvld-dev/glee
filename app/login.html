@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glee</title>
+  <title>Glee | Login</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -57,20 +57,20 @@
 
     <section class="page-top">
       <div class="container">
-        <h2 class="page-top__title">
+        <h1 class="page-top__title">
           Log in
-        </h2>
-        <div class="page-top__breadcrumbs">
-          <ul class="page-top__breadcrumbs-list">
-            <li class="page-top__breadcrumbs-item">
-              <a class="page-top__breadcrumbs-link" href="#">
+        </h1>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
                 Home
               </a>
             </li>
-            <li class="page-top__breadcrumbs-item">
-              <a class="page-top__breadcrumbs-link" href="#">
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__link" href="#">
                 Log in
-              </a>
+              </span>
             </li>
           </ul>
         </div>
@@ -88,11 +88,12 @@
             Password *
             <input class="login__input" type="password" required>
           </label>
-          <button class="login__btn">Login</button>
+          <button class="login__btn" type="submit">Login</button>
           <div class="login__box">
             <label class="login__label login__label--checkbox">
-              <input class="login__checkbox" type="checkbox">
-              Remember me
+              <input class="login__input-checkbox" type="checkbox">
+              <span class="login__checkbox"></span>
+              <span>Remember me</span>
             </label>
             <a class="login__link" href="#">Lost your password?</a>
           </div>
