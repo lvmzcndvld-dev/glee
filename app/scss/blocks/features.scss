@@ -23,8 +23,9 @@
     }
 
     @media (max-width: $md) {
-      text-align: center;
       padding: 55px 15px 10px;
+
+      text-align: center;
     }
 
     @media (max-width: $sm) {
@@ -49,6 +50,7 @@
 
     @media (max-width: $md) {
       top: 0;
+
       transform: none;
     }
 
@@ -58,6 +60,7 @@
 
     @media (max-width: $xx) {
       top: 0;
+      
       transform: none;
     }
 

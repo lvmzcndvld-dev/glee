@@ -67,6 +67,7 @@
   &__descr {
     position: absolute;
     z-index: 1;
+    
     margin: 40px 10px 10px 35px;
 
     @media (max-width: $lg) {
