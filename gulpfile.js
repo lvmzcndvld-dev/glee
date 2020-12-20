@@ -25,7 +25,7 @@ function styles() {
         }))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
-            overrideBrowserslist: ['last 10 versions'],
+            overrideBrowserslist: ['last 4 versions'],
             grid: true
         }))
         .pipe(dest('app/css'))

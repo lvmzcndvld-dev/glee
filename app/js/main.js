@@ -1,4 +1,9 @@
 $(function () {
+    $('.header__btn, .menu a').on('click', function () {
+        $('.menu').toggleClass('menu--active');
+        $('.header__btn').toggleClass('header__btn--active');
+    });
+
     $('.product-details__related-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -47,17 +52,17 @@ $(function () {
         $('.card-product').removeClass('card-product--list');
     })
 
-    $(".filter-price__input").ionRangeSlider({
+    $(".filter__price-input").ionRangeSlider({
         type: "double",
         prefix: "$",
         step: 0.01,
         onStart: function (data) {
-            $('.filter-price__from').text(data.from);
-            $('.filter-price__to').text(data.to);
+            $('.filter__price-from').text(data.from);
+            $('.filter__price-to').text(data.to);
         },
         onChange: function (data) {
-            $('.filter-price__from').text(data.from);
-            $('.filter-price__to').text(data.to);
+            $('.filter__price-from').text(data.from);
+            $('.filter__price-to').text(data.to);
         },
     });
 

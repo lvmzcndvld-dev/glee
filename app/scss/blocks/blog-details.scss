@@ -1,0 +1,144 @@
+.blog-details {
+  padding-bottom: 70px;
+
+  &__content-text {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: $title-accent;
+
+    h3 {
+      margin: 30px 0 25px;
+
+      font-size: inherit;
+      @extend %rubik-500;
+    }
+
+    p {
+      font: inherit;
+      margin: 25px 0;
+    }
+
+    blockquote {
+      padding: 20px 100px 20px 40px;
+      margin: 40px 0 75px;
+
+      background-color: #edf1f4;
+      border-left: 6px solid $link;
+    }
+
+    span {
+      position: relative;
+
+      display: block;
+      margin-top: 8px;
+      padding-left: 45px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 2px;
+        top: 14px;
+
+        width: 20px;
+        height: 2px;
+        background-color: $link;
+      }
+    }
+  }
+
+  &__left-img {
+    float: left;
+    margin-right: 30px;
+    margin-top: -30px;
+  }
+
+  &__right-img {
+    float: right;
+    margin-left: 30px;
+    margin-top: -30px;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+
+    margin-top: 50px;
+    padding: 25px 0;
+
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  &__author-img {
+    margin-right: 28px;
+  }
+
+  &__author-name {
+    margin-bottom: 12px;
+
+    @extend %rubik-500;
+    font-size: 18px;
+    line-height: 1.38;
+
+    color: #333;
+  }
+
+  &__author-box {
+    margin-left: auto;
+  }
+
+  &__author-tags,
+  &__author-share {
+    span {
+      margin-right: 10px;
+
+      @extend %rubik-400;
+      font-size: 16px;
+      line-height: 1.62;
+
+      color: #333;
+    }
+  }
+
+  &__author-tags {
+    margin-bottom: 7px;
+
+    span {
+      margin-right: 35px;
+    }
+
+    a {
+      transition: color .3s;
+
+      &:hover {
+        color: $link;
+      }
+    }
+  }
+
+  &__author-share {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 1.87;
+  }
+
+  &__author-link {
+    margin-right: 10px;
+
+    &:hover {
+      svg {
+        fill: $link;
+      }
+    }
+
+    svg {
+      height: 16px;
+      width: 20px;
+
+      fill: #a1a1a1;
+
+      transition: fill .3s;
+    }
+  }
+}

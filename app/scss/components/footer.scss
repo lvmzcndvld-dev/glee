@@ -10,11 +10,17 @@
     padding-bottom: 60px;
 
     border-bottom: 1px solid #dae4e9;
+
+    @media (max-width: $md) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: $sm) {
+      margin: 0 auto;
+    }
   }
 
   &__top-item {
-    margin-bottom: 8px;
-
     line-height: 1.71;
 
     &--contact {
@@ -27,6 +33,31 @@
 
     &--form {
       max-width: 270px;
+
+      @media (max-width: $sm) {
+        max-width: 320px;
+      }
+    }
+
+    @media (max-width: $md) {
+      margin: 20px 20px 0;
+    }
+
+    @media (max-width: $sm) {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+
+  &__top-li {
+    margin-bottom: 8px;
+  }
+
+  &__top-link {
+    transition: color .3s;
+
+    &:hover {
+      color: $title-accent;
     }
   }
 
@@ -51,6 +82,12 @@
     margin-bottom: 10px;
 
     font-style: normal;
+
+    transition: color .3s;
+
+    &:hover {
+      color: $title-accent;
+    }
   }
 
   &__top-text {
@@ -64,9 +101,9 @@
   }
 
   &__top-label {
+    display: block;
     height: inherit;
     width: 63%;
-    display: block;
   }
 
   &__top-input {
@@ -101,15 +138,31 @@
     cursor: pointer;
   }
 
+
+
   &__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 90px;
+
+    @media (max-width: $sm) {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &__bottom-list {
     display: flex;
+    transition: color .3s;
+
+    &:hover {
+      color: $title-accent;
+    }
+
+    @media (max-width: $sm) {
+      margin-top: 10px;
+    }
   }
 
   &__bottom-item {
@@ -122,13 +175,17 @@
       &::after {
         display: none;
       }
+
+      @media (max-width: $sm) {
+        margin-right: 16px;
+      }
     }
 
     &::after {
       content: '';
       position: absolute;
       right: -16px;
-      top: 2px;
+      top: 0;
 
       height: 17px;
       width: 1px;

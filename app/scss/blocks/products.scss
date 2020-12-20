@@ -1,16 +1,8 @@
 .products {
-  padding-bottom: 75px;
+  padding-bottom: 30px;
 
   &__title {
     @extend %title-margins;
-  }
-
-  &__filter {
-    @include filter;
-  }
-
-  &__filter-btn {
-    @include filter-btn;
   }
 
   &__content {
@@ -18,5 +10,18 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, minmax(max-content, 380px));
     gap: 40px 30px;
+
+    @media (max-width: $md) {
+      grid-template-rows: repeat(2, minmax(max-content, 280px));
+    }
+
+    @media (max-width: $sm) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, minmax(max-content, 380px));
+    }
+    @media (max-width: $xs) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, minmax(max-content, 350px));
+    }
   }
 }

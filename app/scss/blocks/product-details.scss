@@ -63,12 +63,15 @@
     margin-top: 50px;
   }
 
-  &__content-item,
-  &__content-link {
+  &__content-item {
     @extend %rubik-400;
     font-size: 16px;
     line-height: 1.87;
     color: $title-accent;
+  }
+
+  &__content-link {
+    color: inherit;
   }
 
   &__related {
@@ -143,6 +146,7 @@
 
 .jq-number__field {
   width: 152px;
+  padding: 0 55px;
 
   border: 1px solid $link;
   border-bottom-color: $link;

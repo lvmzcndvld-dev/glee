@@ -9,6 +9,10 @@
   background-size: cover;
   background-position: center center;
 
+  @media (max-width: $xs) {
+    height: 300px;
+  }
+
   &__play-link {
     position: relative;
 
