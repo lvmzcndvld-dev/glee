@@ -1,0 +1,135 @@
+.connection {
+  text-align: center;
+
+  &__subtitle {
+    @extend %poppins-700;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: $link;
+  }
+
+  &__title {
+    margin-bottom: 65px;
+
+    @extend %dmsans-700;
+    font-size: 35px;
+    line-height: 1.62;
+
+    color: $title-accent;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+
+    margin-bottom: 120px;
+  }
+
+  &__item {
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+
+    background-color: #fbfbfb;
+
+    transition: color .3s;
+
+    &:hover {
+      border: 2px solid $link;
+
+      .connection__item-img {
+        background-color: $link;
+
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  &__item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 60px;
+
+    background-color: #fff;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    border-radius: 20px;
+
+    transition: background-color .3s;
+  }
+
+  &__item-icon {
+    width: 40px;
+    height: 40px;
+
+    fill: #436372;
+  }
+
+  &__item-title {
+    margin-bottom: 15px;
+
+    @extend %dmsans-700;
+    font-size: 20px;
+    line-height: 1.3;
+
+    color: #222;
+  }
+
+  &__item-text {
+    font-size: 16px;
+    line-height: 1.87;
+
+    color: #565872;
+
+    span {
+      display: block;
+    }
+
+    a {
+      color: inherit;
+
+      transition: color .3s;
+
+      &:hover {
+        color: #222;
+      }
+    }
+  }
+
+  &__form {
+    max-width: 620px;
+  }
+
+  &__form-input,
+  &__form-textarea {
+    background-color: #fafafa;
+    border: none;
+  }
+
+  &__form-btn {
+    display: block;
+    border-radius: 5px;
+    padding: 15px 48px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+  }
+
+  #map {
+    width: 500px;
+    height: 335px;
+  }
+}
